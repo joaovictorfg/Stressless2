@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE9E9"
+    android:orientation="vertical"
+    tools:context="com.example.joovictorfirmino.stressless.TelaCadastro">
+
+    <LinearLayout
+        android:id="@+id/formLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/editBrinco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Número brinco animal"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editFr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Frequencia respiratoria"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Temperatura retal"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:layout_weight="1"
+        android:background="#ef1137"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:layout_weight="1"
+        android:background="#ef1137"
+        android:text="Voltar"
+        android:layout_below="@+id/btnSalvar"
+        android:layout_alignParentStart="true" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="Cadastro de dados"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
